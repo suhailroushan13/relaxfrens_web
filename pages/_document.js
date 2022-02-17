@@ -16,6 +16,7 @@ class MyDocument extends Document {
                         rel="stylesheet"
                         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
                     />
+                    <script data-ad-client="ca-pub-9876319634376967" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZZEP4FZR1"></script>
                     <script dangerouslySetInnerHTML={{
                         __html: `
