@@ -1,0 +1,52 @@
+.flex{
+    display: flex;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.m-10{
+    margin: 10px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.ml-10{
+    margin-left: 10px;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.mx-10{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.my-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.p-10{
+    margin: 10px;
+}
+.pt-10{
+    margin-top: 10px;
+}
+.pb-10{
+    margin-bottom: 10px;
+}
+.px-10{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.py-10{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

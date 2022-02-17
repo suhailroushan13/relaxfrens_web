@@ -1,0 +1,34 @@
+.nav {
+    height: 70px;
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0px 5rem;
+}
+
+.logo {
+    width: 40px;
+}
+
+.nav h1 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+/* for tablet */
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 30px;
+    }
+
+    .nav h1 {
+        font-size: 1rem;
+    }
+    .nav {
+        padding: 0px 2rem;
+    }
+}
