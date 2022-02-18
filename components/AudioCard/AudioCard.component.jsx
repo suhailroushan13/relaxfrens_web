@@ -5,6 +5,7 @@ import styles from './AudioCard.module.css';
 import { BsFillDropletFill } from 'react-icons/bs';
 import { GiCampfire, GiNestBirds } from 'react-icons/gi';
 import dynamic from 'next/dynamic'
+import AppContext from '../../context/app.context';
 
 
 const AudioCard = props => {
@@ -13,6 +14,7 @@ const AudioCard = props => {
     const [audio, setAudio] = React.useState(null);
     const [active, setActive] = React.useState(false);
     const audioTag = React.useRef(null);
+    const appContext = React.useContext(AppContext)
     React.useEffect(() => {
         // console.log(volume, audioTag.current.volume);
         // audioTag.current.volume = volume / 100;
@@ -42,7 +44,7 @@ const AudioCard = props => {
             audioUrl = "/audio/rain.mp3"
         }
         if (audioName === "thunder") {
-            audioUrl = "/audio/thunder.wav"
+            audioUrl = "/audio/thunder.mp3"
         }
         if (audioName === "clockTimer") {
             audioUrl = "/audio/clock_timer.wav"
@@ -58,7 +60,16 @@ const AudioCard = props => {
             audio.loop = true;
             audio.volume = volume / 100;
         }
-    }, [audio, volume]);
+
+        if (!appContext.isAudioPlaying) {
+            audio.pause()
+        } else if (appContext.isAudioPlaying && active) {
+            audio.play()
+        }
+        if (appContext.isResetSettings) {
+            resetSettings()
+        }
+    }, [audio, volume, appContext, active]);
 
 
     const toggleActive = () => {
@@ -71,12 +82,22 @@ const AudioCard = props => {
             audio.pause();
         }
     }
+    const resetSettings = () => {
+        setActive(false);
+        audio.pause();
+        setVolume(50);
+        appContext.clearResetSettings();
+    }
 
-    return <div className={`${styles.cardContainer} ${active && styles.cardContainerActive}`}>
+    return <div className={`${styles.cardContainer} ${active && styles.cardContainerActive} ${!appContext.isAudioPlaying && styles.globalPaused}`}>
         <div className={styles.iconContainer} onClick={() => {
             toggleActive()
         }}>
-
+            <AppContext.Consumer>
+                {
+                    value => console.log(value)
+                }
+            </AppContext.Consumer>
             {
                 Icon ?
                     <Icon fontSize={40} className={`${styles.icon} ${active && styles.iconActive}`} /> : ""

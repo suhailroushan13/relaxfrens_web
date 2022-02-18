@@ -1,3 +1,4 @@
+import React from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css';
@@ -6,6 +7,14 @@ import Layout from '../containers/Layout/Layout.container';
 import Main from '../containers/Main/Main.container';
 
 export default function Home() {
+  const [appState, setAppState] = React.useState({
+    isAudioPlaying: true
+  })
+  const toggleAudioPlaying = () => {
+    setAppState(prev => ({
+      isAudioPlaying: !prev.isAudioPlaying
+    }))
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -15,8 +24,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Layout>
-          <Main />
+        <Layout toggleAudioPlaying={toggleAudioPlaying} appState={appState}>
+          <Main toggleAudioPlaying={toggleAudioPlaying} appState={appState} />
         </Layout>
 
       </main>

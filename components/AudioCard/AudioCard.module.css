@@ -89,6 +89,12 @@
     color: #777;
 }
 
+
+.globalPaused{
+    opacity: 0.6;
+}
+
+
 @keyframes sliderActive {
     0% {
         visibility: visible;

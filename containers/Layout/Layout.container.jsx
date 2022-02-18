@@ -3,20 +3,26 @@ import React from 'react';
 import Navbar from '../../components/Navbar/Navbar.component';
 import Footer from '../../components/Footer/Footer.component'
 import Header from '../../components/Header/Header.component';
+import AppContext from '../../context/app.context';
 
 const Layout = props => {
-    const [sounds, setSounds] = React.useState([{
-        name: "",
-        file: "",
-        volume: 0,
-        icon: ""
-    }]);
-
+    const [isPlaying, setPlaying] = React.useState(true);
+    const [isReset, setReset] = React.useState(false);
+    const togglePlaying = () => {
+        setPlaying(isPlaying => !isPlaying)
+    }
+    const clearResetSettings = () => {
+        setReset(false);
+    }
+    const setResetSettings = () => {
+        setReset(true);
+    }
     return <div>
-        <Navbar />
-        <Header />
-        {props.children}
-        <Footer />
+        <AppContext.Provider value={{ isAudioPlaying: isPlaying, isResetSettings: isReset, togglePlaying, clearResetSettings, setResetSettings }}>
+            <Navbar />
+            {props.children}
+            <Footer />
+        </AppContext.Provider>
     </div>
 
 }
