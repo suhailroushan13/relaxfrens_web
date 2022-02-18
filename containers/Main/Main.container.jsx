@@ -13,13 +13,7 @@ import styles from './Main.module.css';
 // import { BsFillDropletFill } from 'react-icons/bs';
 
 const Main = props => {
-    const [sounds, setSounds] = React.useState([{
-        name: "",
-        file: "",
-        volume: 0,
-        icon: ""
-    }]);
-
+    
     return <div>
         {/* <audio src="/audio/wind.mp3" controls autoPlay style={{ visibility: "hidden" }} /> */}
         <div  className={styles.soundContainer}>

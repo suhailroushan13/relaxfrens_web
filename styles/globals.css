@@ -15,3 +15,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+}
+h3{
+  font-weight: 400;
+}

@@ -72,14 +72,14 @@ const AudioCard = props => {
         }
     }
 
-    return <div className={styles.cardContainer}>
+    return <div className={`${styles.cardContainer} ${active && styles.cardContainerActive}`}>
         <div className={styles.iconContainer} onClick={() => {
             toggleActive()
         }}>
 
             {
                 Icon ?
-                    <Icon fontSize={40}className={`${styles.icon} ${active && styles.iconActive}`} /> : ""
+                    <Icon fontSize={40} className={`${styles.icon} ${active && styles.iconActive}`} /> : ""
             }
         </div>
         <div>

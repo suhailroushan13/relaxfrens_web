@@ -1,11 +1,78 @@
-.footerContainer{
+.footerContainer {
     position: fixed;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to bottom, #fff, rgba(0,0,0,0.0)), url('/images/footer_bg.jpg') ;
+    background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.0)), url('/images/footer_bg_2.jpg');
     width: 100%;
     height: 70px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footerActionContainer {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 300px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+}
+
+
+.actionPrimary {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: transform 0.2s;
+    color: #555;
+}
+
+.actionSecondary {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: transform 0.2s;
+    margin-left: 10px;
+    color: #555;
+}
+
+.actionPrimary:active {
+    transform: scale(0.9);
+}
+
+.actionSecondary:active {
+    transform: scale(0.9);
+}
+
+.appCredits {
+    color: #eee;
+    margin-left: 10px;
+}
+
+.appCredits a {
+    text-decoration: underline;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 
 import Navbar from '../../components/Navbar/Navbar.component';
 import Footer from '../../components/Footer/Footer.component'
+import Header from '../../components/Header/Header.component';
 
 const Layout = props => {
     const [sounds, setSounds] = React.useState([{
@@ -13,6 +14,7 @@ const Layout = props => {
 
     return <div>
         <Navbar />
+        <Header />
         {props.children}
         <Footer />
     </div>
