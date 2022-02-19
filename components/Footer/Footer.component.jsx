@@ -29,7 +29,7 @@ const Footer = props => {
                         </div>
                         <div className={styles.appCredits}>
                             Built with {" "}
-                            <Image src="/images/heart_emoji.png" width={15} height={15} /> by {" "}
+                            <img src="/images/heart_emoji.png" alt="heart emoji" className={styles.heartEmoji} /> by {" "}
                             <a href="https://twitter.com/zubairself" target="_blank" rel="noreferrer">Zubair</a>
                         </div>
                     </div>

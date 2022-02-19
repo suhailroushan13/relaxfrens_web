@@ -76,3 +76,8 @@
 .appCredits a {
     text-decoration: underline;
 }
+
+.heartEmoji{
+    width: 15px;
+    height: 15px;
+}

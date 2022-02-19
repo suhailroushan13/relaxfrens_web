@@ -93,11 +93,6 @@ const AudioCard = props => {
         <div className={styles.iconContainer} onClick={() => {
             toggleActive()
         }}>
-            <AppContext.Consumer>
-                {
-                    value => console.log(value)
-                }
-            </AppContext.Consumer>
             {
                 Icon ?
                     <Icon fontSize={40} className={`${styles.icon} ${active && styles.iconActive}`} /> : ""
@@ -115,7 +110,6 @@ const AudioCard = props => {
                     }
                     }
                     onChange={(e) => {
-                        console.log({ e });
                         setVolume(e);
                     }}
                     value={volume}

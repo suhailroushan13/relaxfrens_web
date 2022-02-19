@@ -29,14 +29,14 @@ export default function About() {
                 <h2>
                     Follow relaxfrens
                 </h2>
-                <a href="https://twitter.com/zubairself" target="_blank" rel="noreferrer" className='social-link m-10'><BsInstagram /></a>
+                <a href="https://instagram.com/relaxfrens" target="_blank" rel="noreferrer" className='social-link m-10'><BsInstagram /></a>
                 <br />
                 <h2>
                     Follow the developer
                 </h2>
                 <div className='mt-10'>
                     <a href="https://twitter.com/zubairself" target="_blank" rel="noreferrer" className='social-link'><BsTwitter /></a>
-                    <a href="https://twitter.com/zubairself" target="_blank" rel="noreferrer" className='social-link ml-10'><BsInstagram /></a>
+                    <a href="https://instagram.com/zubairself" target="_blank" rel="noreferrer" className='social-link ml-10'><BsInstagram /></a>
 
                 </div>
 
