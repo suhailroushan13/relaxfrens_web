@@ -20,25 +20,25 @@ const AudioCard = props => {
         // audioTag.current.volume = volume / 100;
         let audioUrl = "";
         if (audioName === "waterWaves") {
-            audioUrl = "/audio/water_waves.wav"
+            audioUrl = "/audio/water_waves.mp3"
         }
         if (audioName === "ambulance") {
             audioUrl = "/audio/ambulance_sound.wav"
         }
         if (audioName === "birds") {
-            audioUrl = "/audio/birds.wav"
+            audioUrl = "/audio/birds.mp3"
         }
         if (audioName === "campFire") {
-            audioUrl = "/audio/camp_fire.wav"
+            audioUrl = "/audio/camp_fire.mp3"
         }
         if (audioName === "children") {
-            audioUrl = "/audio/children_audience.wav"
+            audioUrl = "/audio/children_audience.mp3"
         }
         if (audioName === "cityRoad") {
-            audioUrl = "/audio/city_road.wav"
+            audioUrl = "/audio/city_road.mp3"
         }
         if (audioName === "wind") {
-            audioUrl = "/audio/wind.wav"
+            audioUrl = "/audio/wind.mp3"
         }
         if (audioName === "rain") {
             audioUrl = "/audio/rain.mp3"
