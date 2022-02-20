@@ -53,7 +53,7 @@ const AudioCard = props => {
         }
         if (!audio) {
             setAudio(new Audio(audioUrl))
-        }
+        } 
     }, [])
     React.useEffect(() => {
         // console.log(volume, audioTag.current.volume);
@@ -74,10 +74,15 @@ const AudioCard = props => {
 
     React.useEffect(() => {
         if (audio) {
-
+            
             audio.volume = volume / 100;
         }
     }, [volume])
+    React.useEffect(() => {
+        if (audio) {
+            audio.loop = true;
+        }
+    }, [audio])
     React.useEffect(() => {
         if (audio) {
 
