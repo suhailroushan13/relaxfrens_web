@@ -17,9 +17,9 @@ const AudioCard = props => {
     const [active, setActive] = React.useState(false);
     const audioTag = React.useRef(null);
     const appContext = React.useContext(AppContext)
+
+
     React.useEffect(() => {
-        // console.log(volume, audioTag.current.volume);
-        // audioTag.current.volume = volume / 100;
         let audioUrl = "";
         if (audioName === "waterWaves") {
             audioUrl = "/audio/water_waves.mp3"
@@ -51,32 +51,45 @@ const AudioCard = props => {
         if (audioName === "clockTimer") {
             audioUrl = "/audio/clock_timer.wav"
         }
-
-
         if (!audio) {
-            setAudio(new Howl({
-                src: [audioUrl],
-                loop: true,
-                volume: 0.5,
-
-            }));
+            setAudio(new Audio(audioUrl))
         }
+    }, [])
+    React.useEffect(() => {
+        // console.log(volume, audioTag.current.volume);
+        // audioTag.current.volume = volume / 100;
+
+
+
+
         if (!appContext.isAudioPlaying) {
             audio.pause()
-        } else if (appContext.isAudioPlaying && active) {
+        } else if (appContext.isAudioPlaying && audio) {
             audio.play()
         }
         if (appContext.isResetSettings) {
             resetSettings()
         }
-    }, [audio, appContext, active]);
+    }, [appContext, active]);
 
     React.useEffect(() => {
         if (audio) {
 
-            audio.volume(volume / 100);
+            audio.volume = volume / 100;
         }
     }, [volume])
+    React.useEffect(() => {
+        if (audio) {
+
+            if (active) {
+                audio.play();
+            }
+            else {
+                audio.pause();
+            }
+        }
+    }, [active])
+
 
     const toggleActive = () => {
         if (!active) {
