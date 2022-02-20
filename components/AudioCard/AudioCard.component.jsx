@@ -20,7 +20,6 @@ const AudioCard = props => {
     React.useEffect(() => {
         // console.log(volume, audioTag.current.volume);
         // audioTag.current.volume = volume / 100;
-        console.error(audio)
         let audioUrl = "";
         if (audioName === "waterWaves") {
             audioUrl = "/audio/water_waves.mp3"
@@ -55,7 +54,6 @@ const AudioCard = props => {
 
 
         if (!audio) {
-            console.error(audio)
             setAudio(new Howl({
                 src: [audioUrl],
                 loop: true,
