@@ -9,7 +9,7 @@ module.exports =
     pwa: {
       dest: "public",
       register: true,
-      skipWaiting: true
+      skipWaiting: true,
     }
   })
 
