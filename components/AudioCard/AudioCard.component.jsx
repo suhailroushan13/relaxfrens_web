@@ -64,7 +64,7 @@ const AudioCard = props => {
 
         if (!appContext.isAudioPlaying) {
             audio.pause()
-        } else if (appContext.isAudioPlaying && audio) {
+        } else if (appContext.isAudioPlaying && active) {
             audio.play()
         }
         if (appContext.isResetSettings) {
