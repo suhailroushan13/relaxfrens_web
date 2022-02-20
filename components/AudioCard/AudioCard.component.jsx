@@ -6,6 +6,8 @@ import { BsFillDropletFill } from 'react-icons/bs';
 import { GiCampfire, GiNestBirds } from 'react-icons/gi';
 import dynamic from 'next/dynamic'
 import AppContext from '../../context/app.context';
+import { Howl, Howler } from 'howler';
+
 
 
 const AudioCard = props => {
@@ -18,6 +20,7 @@ const AudioCard = props => {
     React.useEffect(() => {
         // console.log(volume, audioTag.current.volume);
         // audioTag.current.volume = volume / 100;
+        console.error(audio)
         let audioUrl = "";
         if (audioName === "waterWaves") {
             audioUrl = "/audio/water_waves.mp3"
@@ -52,15 +55,14 @@ const AudioCard = props => {
 
 
         if (!audio) {
-            setAudio(new Audio(audioUrl), () => {
-                audio.loop = true;
-            });
-        }
-        else {
-            audio.loop = true;
-            audio.volume = volume / 100;
-        }
+            console.error(audio)
+            setAudio(new Howl({
+                src: [audioUrl],
+                loop: true,
+                volume: 0.5,
 
+            }));
+        }
         if (!appContext.isAudioPlaying) {
             audio.pause()
         } else if (appContext.isAudioPlaying && active) {
@@ -69,8 +71,14 @@ const AudioCard = props => {
         if (appContext.isResetSettings) {
             resetSettings()
         }
-    }, [audio, volume, appContext, active]);
+    }, [audio, appContext, active]);
 
+    React.useEffect(() => {
+        if (audio) {
+
+            audio.volume(volume / 100);
+        }
+    }, [volume])
 
     const toggleActive = () => {
         if (!active) {
