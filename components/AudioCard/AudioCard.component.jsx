@@ -61,7 +61,7 @@ const AudioCard = props => {
 
 
 
-
+        console.log(appContext.isAudioPlaying);
         if (!appContext.isAudioPlaying) {
             audio.pause()
         } else if (appContext.isAudioPlaying && active) {
@@ -70,6 +70,7 @@ const AudioCard = props => {
         if (appContext.isResetSettings) {
             resetSettings()
         }
+        
     }, [appContext, active]);
 
     React.useEffect(() => {
@@ -86,7 +87,7 @@ const AudioCard = props => {
     React.useEffect(() => {
         if (audio) {
 
-            if (active) {
+            if (active && appContext.isAudioPlaying) {
                 audio.play();
             }
             else {
@@ -99,11 +100,9 @@ const AudioCard = props => {
     const toggleActive = () => {
         if (!active) {
             setActive(true);
-            audio.play();
         }
         else {
             setActive(false);
-            audio.pause();
         }
     }
     const resetSettings = () => {

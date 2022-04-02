@@ -10,7 +10,11 @@ const Navbar = props => {
             <h1 className='ml-10'><Link href="/" className="">Relax Frens</Link></h1>
 
         </div>
-        <Link href="/about" className="">About</Link>
+        <div>
+            <a href="https://relaxfrens.medium.com" rel="noopener noreferrer" className="mr-20" target="_blank">Blog</a>
+            <Link href="/about" className="">About</Link>
+        </div>
+
     </nav>
 }
 

@@ -1,0 +1,8 @@
+.container{
+    color: #aaa;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container a {
+    text-decoration: underline;
+}

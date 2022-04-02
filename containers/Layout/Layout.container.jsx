@@ -21,7 +21,10 @@ const Layout = props => {
         <AppContext.Provider value={{ isAudioPlaying: isPlaying, isResetSettings: isReset, togglePlaying, clearResetSettings, setResetSettings }}>
             <Navbar />
             {props.children}
-            <Footer />
+            {
+                !props.withoutController &&
+                <Footer />
+            }
         </AppContext.Provider>
     </div>
 
