@@ -26,6 +26,7 @@ class MyDocument extends Document {
                     <meta name='mobile-web-app-capable' content='yes' />
                     <meta name='msapplication-tap-highlight' content='no' />
                     <meta name='theme-color' content='#25D871' />
+                    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css" />
 
 
 
