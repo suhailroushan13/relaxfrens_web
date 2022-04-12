@@ -44,10 +44,10 @@ export default function About() {
                     <a href="https://www.buymeacoffee.com/zubairself" target="_blank" rel="noreferrer" className='link1' >Support this app</a>
                 </h3>
                 {/* Begin Mailchimp Signup Form */}
-                <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }} className="mt-10">
+                <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%" }} className="mt-10">
 
 
-                    <style type="text/css" dangerouslySetInnerHTML={{ __html: "\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:600px;}\n\t/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.\n\t   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\n" }} />
+                    <style type="text/css" dangerouslySetInnerHTML={{ __html: "\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  max-width:600px; min-width: 300px;}\n\t/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.\n\t   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\n" }} />
                     <div id="mc_embed_signup">
                         <form action="https://zubstr.us8.list-manage.com/subscribe/post?u=7fc5d98aeac8f822c847c9348&id=0d5b6f71df" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
                             <div id="mc_embed_signup_scroll">
