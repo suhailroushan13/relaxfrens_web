@@ -17,7 +17,7 @@ class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
                     />
                     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9991747125235807"
-                        crossorigin="anonymous"></script>
+                        crossOrigin="anonymous"></script>
 
                     <meta name='application-name' content='RelaxFrens' />
                     <meta name='apple-mobile-web-app-capable' content='yes' />
