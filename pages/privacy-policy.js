@@ -109,6 +109,12 @@ export default function Home() {
                     <p>RelaxFrens does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
                 </Layout>
 
+                <div style={{ width: "100%", textAlign: "center", padding: "20px 0px" }}>
+                    <a href="https://vercel.com?utm_source=syedzubairahmed001&utm_campaign=oss" noreferrer noopener target="_blank">
+
+                        <img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" alt="vercel logo" />
+                    </a>
+                </div>
             </main>
 
         </div>
