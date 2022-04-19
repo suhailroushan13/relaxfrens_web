@@ -31,7 +31,7 @@ const Main = props => {
             <AudioCard Icon={GiModernCity} audioName="cityRoad" appState={props.appState} toggleAudioPlaying={props.toggleAudioPlaying} />
             <AudioCard Icon={IoIosPeople} audioName="children" appState={props.appState} toggleAudioPlaying={props.toggleAudioPlaying} />
         </div>
-        <div style={{width: "100%"}}>
+        <div style={{ width: "100%" }}>
             {/* Begin Mailchimp Signup Form */}
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%" }} className="mt-10">
 
@@ -40,7 +40,7 @@ const Main = props => {
                 <div id="mc_embed_signup">
                     <form action="https://zubstr.us8.list-manage.com/subscribe/post?u=7fc5d98aeac8f822c847c9348&id=0d5b6f71df" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
                         <div id="mc_embed_signup_scroll">
-                            <h2>Subscribe for RelaxFrens product updates</h2>
+                            <h2 style={{fontSize: "17px"}}>Subscribe for product updates</h2>
                             <div className="mc-field-group">
                                 <label htmlFor="mce-EMAIL">Email Address  <span className="asterisk">*</span>
                                 </label>
@@ -62,6 +62,12 @@ const Main = props => {
                 </div>
             </div>
             {/*End mc_embed_signup*/}
+        </div>
+        <div style={{ width: "100%", textAlign: "center", padding: "20px 0px" }}>
+            <a href="https://vercel.com?utm_source=syedzubairahmed001&utm_campaign=oss" noreferrer noopener target="_blank">
+
+                <img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" alt="vercel logo" />
+            </a>
         </div>
         <Compliance />
     </div>

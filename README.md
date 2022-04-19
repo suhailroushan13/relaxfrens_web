@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# RelaxFrens
 
-## Getting Started
+An app to help you **meditate** better using relaxing nature sounds 😇
+[Web app](https://www.relaxfrens.com) |  [Blog](https://relaxfrens.medium.com)
 
-First, run the development server:
+## Sounds in RelaxFrens
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- Rain
+- Bonfire
+- Birds
+- Wind
+- Waves
+- Thunder
+- City
+- Cafe
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## An alternative to Youtube videos
+RelaxFrens is a great alternative to nature sound videos on YouTube, when you listen to those videos you are wasting your internet usage but with RelaxFrens it's very light weight which uses very less data.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Download as a PWA
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+RelaxFrens is a PWA which means you can download it on your Laptop/Mobile/Desktop and meditate better.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## RelaxFrens Blog
+[Blog](https://relaxfrens.medium.com) on meditation, productivity, mental health and self care.
 
-## Learn More
+## What's next for RelaxFrens?
 
-To learn more about Next.js, take a look at the following resources:
+We are working on couple of things:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Adding more relaxing sounds
+- Ability to login and save a combination of sounds
+- Track progress of your meditation journey
+- more ideas are brewing...
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Sponsor this project:
 
-## Deploy on Vercel
+I want to give this project more time and work on launching more features, you can help me do it by becoming a [sponsor](https://ko-fi.com/zubairself)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![Vercel logo](https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg)](https://vercel.com?utm_source=syedzubairahmed001&utm_campaign=oss)
