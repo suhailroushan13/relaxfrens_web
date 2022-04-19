@@ -1,7 +1,9 @@
-# RelaxFrens
+# <img src="https://www.relaxfrens.com/images/logo/relax_frens_logo.png" alt="drawing" width="50"/> RelaxFrens
 
 An app to help you **meditate** better using relaxing nature sounds 😇
 [Web app](https://www.relaxfrens.com) |  [Blog](https://relaxfrens.medium.com)
+
+[![Screenshot of app](https://raw.githubusercontent.com/syedzubairahmed001/relaxfrens_web/main/screenshot.jpg)](https://relaxfrens.com)
 
 ## Sounds in RelaxFrens
 
