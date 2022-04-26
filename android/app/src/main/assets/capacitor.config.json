@@ -1,0 +1,6 @@
+{
+	"appId": "com.relaxfrens.mobile",
+	"appName": "relaxfrens",
+	"webDir": ".next/server/pages",
+	"bundledWebRuntime": false
+}

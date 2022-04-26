@@ -64,7 +64,7 @@ const Main = props => {
             {/*End mc_embed_signup*/}
         </div>
         <div style={{ width: "100%", textAlign: "center", padding: "20px 0px" }}>
-            <a href="https://vercel.com?utm_source=syedzubairahmed001&utm_campaign=oss" rel="noreferrer noopener" target="_blank">
+            <a href="https://vercel.com?utm_source=relaxfrens&utm_campaign=oss" rel="noreferrer noopener" target="_blank">
 
                 <img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" alt="vercel logo" />
             </a>
