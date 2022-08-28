@@ -2,12 +2,11 @@ import React from "react";
 
 import AudioCard from "../../components/AudioCard/AudioCard.component";
 
-import { BsFillDropletFill, BsCloudRain } from "react-icons/bs";
+import { BsCloudRain } from "react-icons/bs";
 import { GiCampfire, GiNestBirds, GiModernCity } from "react-icons/gi";
 import { SiWindicss } from "react-icons/si";
 import { BiWater } from "react-icons/bi";
 import { IoThunderstormOutline } from "react-icons/io5";
-import { MdOutlineChildFriendly } from "react-icons/md";
 import { IoIosPeople } from "react-icons/io";
 import styles from "./Main.module.css";
 import Header from "../../components/Header/Header.component";
@@ -72,18 +71,27 @@ const Main = (props) => {
         />
       </div>
       <div>
-        <a href="https://goodmind.co?utm_source=relaxfrens.com" target="_blank" rel="noopener noreferrer" style={{
+        <a
+          href="https://goodmind.co?utm_source=relaxfrens.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
             color: "#333",
-            fontSize: '15px',
-            borderRadius: '20px',
-            padding: '3px 20px',
-            display: 'flex',
-            alignItems: 'center',
-            backgroundColor: '#eee',
-            margin: '10px',
-            maxWidth: '370px'
-        }}>
-          <img src="/images/partnerships/goodmind_logo.png" alt="goodmind logo" style={{width: '40px', marginRight: '10px'}}/>
+            fontSize: "15px",
+            borderRadius: "20px",
+            padding: "3px 20px",
+            display: "flex",
+            alignItems: "center",
+            backgroundColor: "#eee",
+            margin: "10px",
+            maxWidth: "370px",
+          }}
+        >
+          <img
+            src="/images/partnerships/goodmind_logo.png"
+            alt="goodmind logo"
+            style={{ width: "40px", marginRight: "10px" }}
+          />
           <p>Not feeling better? consult a therapist &rarr;</p>
         </a>
       </div>
